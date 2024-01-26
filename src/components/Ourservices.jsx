@@ -1,4 +1,8 @@
 import React from "react";
+import Plane from "../assets/icon/plane.png";
+import Money from "../assets/icon/money.png";
+import Operator from "../assets/icon/operator.png";
+import Calender from "../assets/icon/calender.png";
 
 const Ourservices = () => {
   return (
@@ -10,7 +14,7 @@ const Ourservices = () => {
             <div className="flex ">
               <img
                 className=" w-[49px] h-[49px] mr-[25px]"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-1.png"
+                src={Plane}
                 alt=""
                 width={49}
                 height={49}
@@ -27,7 +31,7 @@ const Ourservices = () => {
             <div className="flex ">
               <img
                 className=" w-[49px] h-[49px] mr-[25px]"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-2.png"
+                src={Money}
                 alt=""
                 width={49}
                 height={49}
@@ -45,7 +49,7 @@ const Ourservices = () => {
             <div className="flex ">
               <img
                 className=" w-[49px] h-[49px] mr-[25px]"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-3.png"
+                src={Operator}
                 alt=""
                 width={49}
                 height={49}
@@ -63,7 +67,7 @@ const Ourservices = () => {
             <div className="flex ">
               <img
                 className=" w-[49px] h-[49px] mr-[25px]"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-4.png"
+                src={Calender}
                 alt=""
                 width={49}
                 height={49}

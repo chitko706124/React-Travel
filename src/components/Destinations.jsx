@@ -1,50 +1,27 @@
 import React, { useState } from "react";
-import { ImLocation2 } from "react-icons/im";
-import { SlLocationPin } from "react-icons/sl";
 import { TfiLocationPin } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import "../css/des.css";
-const Destinations = () => {
-  // const destinations = [
-  //   {
-  //     name: "South Europe",
-  //     tour: "3 tours",
-  //     img: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_124333858-800x960.jpg",
-  //   },
-  //   {
-  //     name: "Europe",
-  //     tour: "7 tours",
-  //     img: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_255194035-800x960.jpg",
-  //   },
-  //   {
-  //     name: "Asia",
-  //     tour: "5 tours",
-  //     img: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-800x960.jpg",
-  //   },
-  //   {
-  //     name: "America",
-  //     tour: "4 tours",
-  //     img: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/Fotolia_16069076_Subscription_Monthly_XXL-800x960.jpg",
-  //   },
-  //   {
-  //     name: "Africa",
-  //     tour: "3 tours",
-  //     img: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-800x960.jpg",
-  //   },
-  // ];
 
+import SouthAmerica from "../assets/popular-destinations/southAmerica.jpg";
+import Europe from "../assets/popular-destinations/europe.jpg";
+import Asia from "../assets/popular-destinations/asia.jpg";
+import America from "../assets/popular-destinations/america.jpg";
+import Africa from "../assets/popular-destinations/africa.jpg";
+
+const Destinations = () => {
   const destinations = [
     {
       id: 1,
       link: "southAmerica",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_124333858-800x960.jpg",
+      src: SouthAmerica,
       name: "South America",
       tours: 3,
     },
     {
       id: 2,
       link: "europe",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_255194035-800x960.jpg",
+      src: Europe,
       name: "Europe",
       tours: 7,
     },
@@ -52,21 +29,21 @@ const Destinations = () => {
     {
       id: 4,
       link: "asia",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-800x960.jpg",
+      src: Asia,
       name: "Asia",
       tours: 5,
     },
     {
       id: 5,
       link: "america",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/Fotolia_16069076_Subscription_Monthly_XXL-800x960.jpg",
+      src: America,
       name: "America",
       tours: 4,
     },
     {
       id: 6,
       link: "africa",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-800x960.jpg",
+      src: Africa,
       name: "Africa",
       tours: 3,
     },

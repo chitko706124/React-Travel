@@ -7,6 +7,11 @@ import { AiOutlinePieChart } from "react-icons/ai";
 import { SlLocationPin } from "react-icons/sl";
 import { Parallax } from "react-parallax";
 
+import tree from "../assets/about-us/tree.jpg";
+import boat from "../assets/about-us/boat.jpg";
+import japan from "../assets/about-us/japan.jpg";
+import mountain from "../assets/about-us/mountain.jpg";
+
 const cards = [
   {
     icon: <FaRegLightbulb size={40} className=" text-white" />,
@@ -49,16 +54,6 @@ const cards = [
 const Service = () => {
   return (
     <div className=" ">
-      {/* <div className=" bg-about-main bg-cover bg-center h-[200px] md:h-[499px] w-auto relative">
-        <div className=" md:w-full max-w-[500px]  h-full  flex flex-col justify-center  md:max-w-[1180px] mx-auto px-[30px]">
-          <p className=" h-1 font-bold text-3xl md:text-6xl  text-white">
-            Services We Provide
-          </p>
-          <p className=" h-1 font-bold text-lg md:text-2xl  text-white">
-            A small river named Duden flows by their place.
-          </p>
-        </div>
-      </div> */}
       <div
         className=" h-[342.19px] md:h-[350.39px] lg:h-[448.38px] bg-cover  bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bgImage})` }}
@@ -81,10 +76,7 @@ const Service = () => {
       {/* */}
       <div className=" ">
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative ">
-          <Parallax
-            bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591.jpg"
-            strength={200}
-          >
+          <Parallax bgImage={tree} strength={200}>
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
           <div className="  max-w-[600px] my-auto px-[30px] ">
@@ -127,19 +119,13 @@ const Service = () => {
             </div>
           </div>
 
-          <Parallax
-            bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_220323652.jpg"
-            strength={200}
-          >
+          <Parallax bgImage={boat} strength={200}>
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
         </div>
 
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
-          <Parallax
-            bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218.jpg"
-            strength={200}
-          >
+          <Parallax bgImage={japan} strength={200}>
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
           <div className="  max-w-[600px] my-auto px-[30px] ">
@@ -164,8 +150,7 @@ const Service = () => {
       </div>
       <div
         style={{
-          backgroundImage:
-            "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/section-bg-3.jpg')",
+          backgroundImage: `url(${mountain})`,
         }}
         className="h-auto w-full bg-center bg-cover bg-fixed"
       >

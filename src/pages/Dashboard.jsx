@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import Ourservices from "../components/Ourservices";
-// import Search_info from "../components/Popular";
 import Popular from "../components/Popular";
 import Destinations from "../components/Destinations";
 import Activity_tours from "../components/Activity_tours";
 import Discount from "../components/Discount";
 import TravelArticles from "../components/TravelArticles";
 import Booking from "../components/Booking";
-// import Carousel from "../components/Carousel";
 import Test from "../components/Test";
 import { IoIosArrowUp } from "react-icons/io";
-import Slider from "../components/Slider";
 
 const Dashboard = () => {
   const [up, setUp] = useState(false);
@@ -26,9 +23,7 @@ const Dashboard = () => {
   });
   return (
     <div id="one">
-      {/* <Carousel /> */}
       <Test />
-      {/* <Slider /> */}
       <Ourservices />
       <Popular />
       <Destinations />

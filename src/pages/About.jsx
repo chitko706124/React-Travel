@@ -1,7 +1,15 @@
 import React, { useRef, useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import WOW from "wow.js";
+
 import bgImage from "../assets/section-bg-4.jpg";
+import paris from "../assets/about-us/paris.jpg";
+import person1 from "../assets/team-members/person1.jpg";
+import person2 from "../assets/team-members/person2.jpg";
+import person3 from "../assets/team-members/person3.jpg";
+import person4 from "../assets/team-members/person4.jpg";
+import person5 from "../assets/team-members/person5.jpg";
+import person6 from "../assets/team-members/person6.jpg";
 
 import { Parallax } from "react-parallax";
 
@@ -18,32 +26,32 @@ wowjs.init();
 
 const teamMember = [
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-1-550x500.jpg",
+    src: person1,
     title: "JEANETTE KINGSTON",
     field: "Chief Executive Officer",
   },
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-3-550x500.jpg",
+    src: person2,
     title: "ALAN COOPER",
     field: "Vice President",
   },
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-5-550x500.jpg",
+    src: person3,
     title: "JOHN SMITHY",
     field: "Chief Financial Officer",
   },
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-6-550x500.jpg",
+    src: person4,
     title: "PETER SANDLER",
     field: "Senior Engineer",
   },
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-2-550x500.jpg",
+    src: person5,
     title: "RICARDO GOMEZ",
     field: "HR Manager",
   },
   {
-    src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/05/personnel-4-550x500.jpg",
+    src: person6,
     title: "JAMES SMITH",
     field: "Chief Technology Officer",
   },
@@ -75,14 +83,6 @@ const About = () => {
 
   return (
     <>
-      {/* <div className=" bg-about-main bg-cover bg-center h-[200px] md:h-[499px] w-auto relative">
-        <p className=" h-1 font-bold text-3xl md:text-6xl absolute top-16 left-10 md:top-64 md:left-32 text-white">
-          About Us
-        </p>
-        <p className=" h-1 font-bold text-lg md:text-2xl absolute top-28 left-10 md:top-80 md:left-32 text-white">
-          Justo Vulputate Vehicula
-        </p>
-      </div> */}
       <div
         className=" h-[342.19px] md:h-[350.39px] lg:h-[448.38px] bg-cover  bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bgImage})` }}
@@ -223,10 +223,7 @@ const About = () => {
         </div>
 
         <div className=" grid grid-cols-1 md:grid-cols-2 items-center relative">
-          <Parallax
-            bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
-            strength={200}
-          >
+          <Parallax bgImage={paris} strength={200}>
             <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px]"></div>
           </Parallax>
 
