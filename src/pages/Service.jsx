@@ -72,8 +72,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      {/* md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10 px-[30px] */}
-      {/* */}
+  
       <div className=" ">
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative ">
           <Parallax bgImage={tree} strength={200}>

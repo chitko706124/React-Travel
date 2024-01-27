@@ -1,5 +1,5 @@
 import React from "react";
-import Bagan from "../assets/bagan.jpg";
+import Bagan from "../assets/camera-girl.jpg";
 
 const Discount = () => {
   return (

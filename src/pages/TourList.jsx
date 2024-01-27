@@ -1,16 +1,45 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { HiOutlineClock } from "react-icons/hi";
 import { AiTwotoneCalendar } from "react-icons/ai";
-import { HiSupport } from "react-icons/hi";
-import { VscSearch } from "react-icons/vsc";
 import { GrDocumentText } from "react-icons/gr";
 import { FiMail } from "react-icons/fi";
-import { FaDollarSign, FaHeadphones, FaPhone, FaStar } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { Pagination } from "@mantine/core";
 import StarRating from "../components/StarRating";
-import CustomDateInput from "../components/CustomDateInput";
-import { DateInput } from "@mantine/dates";
+
+import bg from "../assets/search-bg.jpg";
+
+import africa from "../assets/search-tours/africa.jpg";
+import alcatraz from "../assets/search-tours/alcatraz.jpg";
+import america_mountain from "../assets/search-tours/america-mountain.jpg";
+import america from "../assets/search-tours/america.jpg";
+import argentina from "../assets/search-tours/argentina.jpg";
+import austria from "../assets/search-tours/austria.jpg";
+import brazil from "../assets/search-tours/brazil.jpeg";
+import chile from "../assets/search-tours/chile.jpeg";
+import china from "../assets/search-tours/china.jpeg";
+import dubai from "../assets/search-tours/dubai.jpg";
+import england from "../assets/search-tours/england.jpg";
+import finland from "../assets/search-tours/finland.jpg";
+import india from "../assets/search-tours/india.jpg";
+import italy from "../assets/search-tours/italy.jpg";
+import japan from "../assets/search-tours/japan.jpg";
+import norway from "../assets/search-tours/norway.jpeg";
+import pais from "../assets/search-tours/pais.jpg";
+import south_africa from "../assets/search-tours/south-africa.jpeg";
+import special from "../assets/search-tours/special.jpg";
+import switzerland from "../assets/search-tours/switzerland.jpg";
+import thailand from "../assets/search-tours/thailand.jpeg";
+import tiger from "../assets/search-tours/tiger.jpg";
+
+import SouthAmerica from "../assets/popular-destinations/southAmerica.jpg";
+import Europe from "../assets/popular-destinations/europe.jpg";
+import Asia from "../assets/popular-destinations/asia.jpg";
+import Africa from "../assets/popular-destinations/africa.jpg";
+
+import photo1 from "../assets/travel-articles/photo1.jpg";
+import photo2 from "../assets/travel-articles/photo2.jpg";
+import photo3 from "../assets/travel-articles/photo3.jpg";
 
 const itemPerPage = 6;
 
@@ -21,7 +50,7 @@ const TourList = () => {
     {
       id: 1,
       link: "africa",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-800x960.jpg",
+      src: africa,
       name: "Africa – Amazing African Safari",
       price: "100",
       duration: "5 Hours",
@@ -34,7 +63,7 @@ const TourList = () => {
     {
       id: 2,
       link: "south Africa",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-164276-800x960.jpeg",
+      src: south_africa,
       name: "South Africa – Cape Town",
       price: "2,200",
       duration: "7 Days 6 Nights",
@@ -47,7 +76,7 @@ const TourList = () => {
     {
       id: 3,
       link: "johannesburg",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_149105702-800x960.jpg",
+      src: tiger,
       name: "5-Day Johannesburg – Victoria Falls",
       price: "2,700",
       duration: "5 Days 4 Nights",
@@ -60,7 +89,7 @@ const TourList = () => {
     {
       id: 4,
       link: "america",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1459255418679-d6424da9ee33-800x960.jpg",
+      src: america,
       name: "America – 2 Days in Lake Tahoe",
       price: "300",
       duration: "2 Days",
@@ -73,7 +102,7 @@ const TourList = () => {
     {
       id: 5,
       link: "alcatraz",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/photodune-4791527-golden-gate-bridge-m-800x960.jpg",
+      src: alcatraz,
       name: "Alcatraz Tour plus Muir Woods",
       price: "120",
       duration: "10 Hours",
@@ -86,7 +115,7 @@ const TourList = () => {
     {
       id: 6,
       link: "americaGrandCanyon",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_94851763-800x960.jpg",
+      src: america_mountain,
       name: "America – Grand canyon, Golden Gate",
       price: "2,800",
       duration: "9 Days 8 Nights",
@@ -99,7 +128,7 @@ const TourList = () => {
     {
       id: 7,
       link: "specialNewYork",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/city-landmark-lights-night-800x960.jpg",
+      src: special,
       name: "Special Day Trip in New York",
       price: "80",
       duration: "10 Hourss",
@@ -112,7 +141,7 @@ const TourList = () => {
     {
       id: 8,
       link: "dubai",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_151616084-800x960.jpg",
+      src: dubai,
       name: "Dubai – All Stunning Places",
       price: "1,200",
       duration: "8 Hours",
@@ -125,7 +154,7 @@ const TourList = () => {
     {
       id: 9,
       link: "japan",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-800x960.jpg",
+      src: japan,
       name: "Japan – 5 Days in Tokyo, Fujikawa",
       price: "1,600",
       duration: "5 Days",
@@ -138,7 +167,7 @@ const TourList = () => {
     {
       id: 10,
       link: "india",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_134373716-800x960.jpg",
+      src: india,
       name: "India – Mumbai, New Delhi",
       price: "1,600",
       duration: "5 Days 4 Nights",
@@ -151,7 +180,7 @@ const TourList = () => {
     {
       id: 11,
       link: "thailand",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-176400-800x960.jpeg",
+      src: thailand,
       name: "Thailand – 4 Days in Phuket",
       price: "1,700",
       duration: "7 Days 6 Nights",
@@ -164,7 +193,7 @@ const TourList = () => {
     {
       id: 12,
       link: "china",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-47426-800x960.jpeg",
+      src: china,
       name: "China – Suzhou and Zhouzhuang",
       price: "1,400",
       duration: "4 Days 3 Nights",
@@ -177,7 +206,7 @@ const TourList = () => {
     {
       id: 13,
       link: "switzerland",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_178807262-800x960.jpg",
+      src: switzerland,
       name: "Switzerland – 7 Days in Zurich, Zermatt",
       price: "3,500",
       duration: "7 Days",
@@ -190,7 +219,7 @@ const TourList = () => {
     {
       id: 14,
       link: "enquiry",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_245507692-800x960.jpg",
+      src: italy,
       name: "Enquiry Form Only – Italy – 6 Days",
       price: "2,000",
       duration: "5 Days",
@@ -203,7 +232,7 @@ const TourList = () => {
     {
       id: 15,
       link: "finland",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-800x960.jpeg",
+      src: finland,
       name: "Finland – Helsinki, Santa Claus Town",
       price: "3,500",
       duration: "8 Days 7 Nights",
@@ -216,7 +245,7 @@ const TourList = () => {
     {
       id: 16,
       link: "paris",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_136984760-800x960.jpg",
+      src: pais,
       name: "Paris – Eiffel Tower, Notre Dame Cathedral..",
       price: "800",
       duration: "10 Hours",
@@ -229,7 +258,7 @@ const TourList = () => {
     {
       id: 17,
       link: "austria",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_154497503-800x960.jpg",
+      src: austria,
       name: "Austria – 6 Days in Vienna, Hallstatt",
       price: "2,100",
       duration: "2 Days 1 Nights",
@@ -242,7 +271,7 @@ const TourList = () => {
     {
       id: 18,
       link: "england",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_139999093-800x960.jpg",
+      src: england,
       name: "England – London, York, Scotland",
       price: "5000",
       duration: "7 Days 6 Nights",
@@ -255,7 +284,7 @@ const TourList = () => {
     {
       id: 19,
       link: "norway",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-172221-800x960.jpeg",
+      src: norway,
       name: "Norway – Heaven on Earth Aurora",
       price: "270",
       duration: "16 Hours",
@@ -268,7 +297,7 @@ const TourList = () => {
     {
       id: 20,
       link: "argentina",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_61340065-800x960.jpg",
+      src: argentina,
       name: "Argentina – Great Diving Trip",
       price: "1,200",
       duration: "2 Days 1 Nights",
@@ -281,7 +310,7 @@ const TourList = () => {
     {
       id: 21,
       link: "brazil",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/rio-de-janeiro-olympics-2016-niteroi-brazil-161212-800x921.jpeg",
+      src: brazil,
       name: "Brazil – Rio de Janeiro",
       price: "1,900",
       duration: "3 Days 2 Nights",
@@ -294,7 +323,7 @@ const TourList = () => {
     {
       id: 22,
       link: "chile",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/pexels-photo-800x960.jpeg",
+      src: chile,
       name: "Chile – Santiago, Wine Country",
       price: "1,900",
       duration: "6 Days 5 Nights",
@@ -321,98 +350,11 @@ const TourList = () => {
   return (
     <>
       <div
-        className=" hidden lg:block bg-auto bg-center pt-[225px] pb-[20px]"
+        className=" hidden lg:block bg-no-repeat bg-cover bg-center pt-[225px] pb-[20px]"
         style={{
-          backgroundImage: `url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/search-bg-2.jpg)`,
+          backgroundImage: `url(${bg})`,
         }}
       >
-        {/* <div className="hidden  md:flex md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-100 bg-transparent items-center  top-[0px] left-0 right-0 z-50">
-          <div className=" flex flex-col gap-3 ">
-            <p className=" text-white font-bold ">Keywords</p>
-            <input
-              type="text"
-              placeholder="Keywords"
-              className=" bg-[#585d6b] w-[200px] md:w-[100px] lg:w-full  outline-none text-[#b9c1d5] p-4 shadow-md
-          "
-            />
-          </div>
-
-          <div className=" flex flex-col gap-3 ">
-            <p className=" text-white font-bold">Activity</p>
-            <select
-              defaultValue=""
-              name=" select_activity"
-              id=""
-              className=" bg-[#585d6b] custom-select w-[200px] md:w-[100px] lg:w-full outline-none text-[#b9c1d5] p-4 shadow-md"
-            >
-              <option value="Any">Any</option>
-              <option value="City Tours">City Tours</option>
-              <option value="Cultural and Thematic Tours">
-                Cultural and Thematic Tours
-              </option>
-              <option value="Family Friendly Tours">
-                Family Friendly Tours
-              </option>
-              <option value="Holiday & Seasonal Tours">
-                Holiday & Seasonal Tours
-              </option>
-              <option value="Indulgence & Luxury Tours">
-                Indulgence & Luxury Tours
-              </option>
-              <option value="Outdoor Activities">Outdoor Activities</option>
-              <option value="Relaxation Tours">Relaxation Tours</option>
-              <option value="Wild & Adventure Tours">
-                Wild & Adventure Tours
-              </option>
-            </select>
-          </div>
-
-          <div className=" flex flex-col gap-3 ">
-            <p className=" text-white font-bold">Destinations</p>
-            <select
-              defaultValue={""}
-              name=" select_Destinations"
-              id=""
-              className=" bg-[#585d6b] custom-select outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
-            >
-              <option value="Any">Any</option>
-              <option value="Africa">Africa</option>
-              <option value="America">America</option>
-              <option value="Asia">Asia</option>
-              <option value="Eastern Europe">Eastern Europe</option>
-              <option value="Europe">Europe</option>
-              <option value="South America">South America</option>
-            </select>
-          </div>
-
-          <div className=" flex flex-col gap-3 ">
-            <p className=" text-white font-bold">Durations</p>
-            <select
-              defaultValue={""}
-              name=" select_durations"
-              id=""
-              className=" bg-[#585d6b] custom-select outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
-            >
-              <option value="Any">Any</option>
-              <option value="1-day-Tour">1 day Tour</option>
-              <option value="2-4-days-Tour">2-4 days Tour</option>
-              <option value="5-7-days-Tour">5-7 days Tour</option>
-              <option value="7+-days-Tour">7 + days Tour</option>
-            </select>
-          </div>
-
-          <div className=" flex flex-col gap-3 ">
-            <p className=" text-white font-bold">Date</p>
-
-            <CustomDateInput className="w-[200px] md:w-[100px]" />
-          </div>
-
-          <button className=" py-4 px-6 mt-8 w-[200px] lg:w-[200px] md:w-[100px] text-white font-bold bg-[#388aee] ">
-            {" "}
-            Search
-          </button>
-        </div> */}
-
         <div className=" w-full">
           <div className=" md:max-w-[1180px] max-w-[500px] mx-auto px-[15px] md:py-[30px]">
             <div className="md:max-w-[1180px] max-w-[500px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
@@ -545,85 +487,6 @@ const TourList = () => {
             </div>
           </div>
         </div>
-        {/* <div className=" container mx-auto px-4">
-          <div className=" px-5 pb-9 flex gap-5 align-middle items-center">
-            <VscSearch className=" text-gray-500 font-bold text-2xl" />
-            <p className="font-bold text-3xl text-white">Search Tours</p>
-          </div>
-
-          <div className=" px-5 pb-8 flex justify-between ">
-            <div className=" mb-5 pe-5">
-              <h3 className=" text-white font-bold text-lg mb-1">Keywords</h3>
-              <input
-                type="text"
-                name="keywords"
-                className=" py-3 ps-5 pe-10 w-[160px] h-[65px] keywords"
-              />
-            </div>
-
-            <div className=" mb-5 pe-5">
-              <h3 className=" text-white font-bold text-lg mb-1">Activity</h3>
-              <select
-                name="keywords"
-                className=" py-3 ps-5 pe-10 w-[160px] h-[65px] custom-select"
-              >
-                <option value="">Any</option>
-                <option value="">Cultural & Thematic Tours</option>
-                <option value="">Family Friendly Tours</option>
-                <option value="">Holiday & Seasonal Tours</option>
-                <option value="">Indulgence & Luxury Tours</option>
-                <option value="">Outdoor Activites</option>
-                <option value="">Relaxation Tours</option>
-                <option value="">Wild & Adventure Tours</option>
-              </select>
-            </div>
-
-            <div className=" mb-5 pe-5">
-              <h3 className=" text-white font-bold text-lg mb-1">
-                Destination
-              </h3>
-              <select
-                name="keywords"
-                className=" py-3 ps-5 pe-10 w-[160px] h-[65px] custom-select"
-              >
-                <option value="">Any</option>
-                <option value="">Africa</option>
-                <option value="">America</option>
-                <option value="">Asia</option>
-                <option value="">Eastern Europe</option>
-                <option value="">Europe</option>
-                <option value="">South America</option>
-              </select>
-            </div>
-
-            <div className=" mb-5 pe-5">
-              <h3 className=" text-white font-bold text-lg mb-1">Duration</h3>
-              <select
-                name="keywords"
-                className=" py-3 ps-5 pe-10 w-[160px] h-[65px] custom-select"
-              >
-                <option value="">Any</option>
-                <option value="">1 Day Tour</option>
-                <option value="">2-4 Days Tour</option>
-                <option value="">5-7 Days Tour</option>
-                <option value="">7+ Days Tour</option>
-              </select>
-            </div>
-
-            <div className=" mb-5 pe-5">
-              <h3 className=" text-white font-bold text-lg mb-1">Date</h3>
-
-              <div className="">
-                <CustomDateInput />
-              </div>
-            </div>
-            <div className=" mb-5 pe-5 pt-8">
-              <button className=" py-3 ps-5 pe-10 w-[160px] h-[65px] keywords bg-blue-600">
-                Search
-              </button>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className=" md:grid md:grid-cols-12 md:grid-flow-row md:gap-10 pt-[70px] pb-[30px] mx-10 md:mx-0 flex flex-col justify-center items-center align-middle md:items-start">
@@ -634,38 +497,38 @@ const TourList = () => {
                 key={place.id}
                 className="md:grid md:grid-cols-7 min-h-[230px] max-w-[430px] md:max-w-full shadow-lg items-center align-middle mb-[30px]"
               >
-                <div className=" col-start-1 col-span-7 md:col-start-1 md:col-span-2 h-auto max-w-full">
-                  <img src={place.src} className=" md:h-auto cursor-pointer" />
+                <div className=" col-start-1 col-span-7 md:col-start-1 md:col-span-2 h-full  max-w-full">
+                  <img src={place.src} className=" md:h-auto cursor-pointer " />
                 </div>
-                <div className=" col-start-1 col-span-7 md:col-start-3 md:col-span-5 px-6 py-9">
+                <div className=" col-start-1 col-span-7 md:col-start-3 md:col-span-5 px-6 ">
                   <div className="flex flex-col md:grid md:grid-cols-7">
                     <div className="md:col-start-1 md:col-span-5 md:border-e-2">
                       <h2 className=" text-2xl font-bold">{place.name}</h2>
 
-                      <p className=" flex justify-start align-middle items-center gap-2 mt-5  text-custom">
+                      <p className=" flex justify-start align-middle items-center gap-2 mt-3  text-custom">
                         <HiOutlineClock className=" text-blue-300" />
                         {place.duration}
                       </p>
 
-                      <p className=" flex justify-start align-middle items-center gap-2 mt-1  text-custom">
+                      <p className=" flex justify-start align-middle items-center gap-2 mt-2  text-custom">
                         <AiTwotoneCalendar className=" text-blue-300" />
                         {place.availability}
                       </p>
-                      <p className=" text mt-5 text-custom">{place.detail}</p>
+                      <p className=" text mt-3 text-custom">{place.detail}</p>
                     </div>
-                    <div className=" col-start-6 col-span-2 flex flex-col ps-6 py-5">
+                    <div className=" col-start-6 col-span-2 flex flex-col ps-6 py-1">
                       <p className=" text-custom text-center">From</p>
                       <h2 className=" text-3xl text-center font-bold mt-1">
                         $ {place.price}
                       </h2>
-                      <div className=" flex items-center justify-center mt-5">
+                      <div className=" flex items-center justify-center mt-3">
                         <StarRating rating={place.rating} />
                       </div>
                       <p className=" text-custom text-xs text-center mt-1">
                         ({place.review} review)
                       </p>
 
-                      <button className=" mt-5 text-white w-full text-sm bg-blue-400 px-[14px] py-[15px] text-center mx-auto">
+                      <button className=" mt-4 text-white w-full text-sm bg-blue-400 px-[12px] py-[13px] text-center mx-auto">
                         View Details
                       </button>
                     </div>
@@ -691,11 +554,7 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3 ps-2 border-b">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={Africa} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 text-sm">Africa – Amazing African Safari</p>
                 <p>
@@ -706,13 +565,9 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3 ps-2 border-b">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_151616084-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={Europe} alt="" className=" h-16 w-16" />
               <div className="">
-                <p className=" mb-1 text-sm">Dubai – All Stunning Places</p>
+                <p className=" mb-1 text-sm">Europe – All Stunning Places</p>
                 <p>
                   <span className=" text-custom text-sm me-2">From</span>{" "}
                   <span className=" font-bold">$1,200</span>
@@ -721,14 +576,10 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3 ps-2 border-b">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_178807262-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={SouthAmerica} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 text-sm">
-                  Switzerland – 7 Days in Zurich, Zermatt
+                  South America – 7 Days in Zurich, Zermatt
                 </p>
                 <div className=" flex justify-between items-center align-middle">
                   <div className=" bg-[#e85e34] px-3 py-1 text-white text-xs">
@@ -744,14 +595,10 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3 ps-2">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_245507692-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={Asia} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 text-sm">
-                  Enquiry Form Only – Around Italy – 6 Days
+                  Enquiry Form Only – Around Japan – 6 Days
                 </p>
                 <div className=" flex justify-between items-center align-middle">
                   <div className=" bg-[#e85e34] px-3 py-1 text-white text-xs">
@@ -770,22 +617,22 @@ const TourList = () => {
           <div
             className=" min-h-[270px] px-9 pt-10 pb-2 bg-cover"
             style={{
-              backgroundImage: `url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/widget-bg.jpg)`,
+              backgroundImage: `url(${bg})`,
             }}
           >
-            <h2 className=" mb-5 text-xl font-bold text-white">
+            <h2 className=" mb-3 text-xl font-bold text-white">
               Get a Question?
             </h2>
             <p className=" text-[#C9E2FF] text-sm font-thin mb-5">
               Do not hesitage to give us a call. We are an expert team and we
               are happy to talk to you.
             </p>
-            <div className=" mb-5 text-[#FFCF2A] flex justify-normal align-middle items-center gap-3 text-xl font-bold">
+            <div className=" mb-3 text-[#FFCF2A] flex justify-normal align-middle items-center gap-3 text-xl font-bold">
               <FaPhone />
               <p>1.8445.3356.33</p>
             </div>
 
-            <div className=" mb-5 text-[#FFCF2A] flex justify-normal align-middle items-center gap-3">
+            <div className=" mb-3 text-[#FFCF2A] flex justify-normal align-middle items-center gap-3">
               <FiMail />
               <p className=" text-white">Help@goodlayers.com</p>
             </div>
@@ -813,11 +660,7 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_195507533-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={photo1} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 font-semibold">
                   How to travel with paper map
@@ -832,11 +675,7 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1459255418679-d6424da9ee33-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={photo2} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 font-semibold">
                   Change your place and get the fresh air
@@ -851,11 +690,7 @@ const TourList = () => {
             </div>
 
             <div className=" flex justify-start gap-3 items-center align-middle py-3">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591-150x150.jpg"
-                alt=""
-                className=" h-16 w-16"
-              />
+              <img src={photo3} alt="" className=" h-16 w-16" />
               <div className="">
                 <p className=" mb-1 font-semibold">
                   Even the all-powerful Pointing

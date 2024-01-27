@@ -14,6 +14,9 @@ import {
 } from "react-icons/fa";
 import "animate.css";
 
+import iceman from "../assets/iceman.jpg";
+import japan from "../assets/countries/japan.jpg";
+
 const wowjs = new WOW({
   boxClass: "wow", // default
   animateClass: "animate__animated", // default
@@ -48,8 +51,12 @@ const BlogDetail = () => {
         >
           <div className="  flex   text-white">
             <div className=" flex flex-col pr-[20px] border-r-[1px]  overflow-hidden">
-              <h1 className=" text-[27px] font-[700] tracking-[1px] animate__fadeInRight wow">06</h1>
-              <p className=" text-[14px] tracking-[1px] text-[#b1b1b1] animate__fadeInRight wow">JUN</p>
+              <h1 className=" text-[27px] font-[700] tracking-[1px] animate__fadeInRight wow">
+                06
+              </h1>
+              <p className=" text-[14px] tracking-[1px] text-[#b1b1b1] animate__fadeInRight wow">
+                JUN
+              </p>
             </div>
             <div className=" flex flex-col gap-1 overflow-hidden pl-[30px]">
               <div className=" flex flex-wrap gap-3 animate__fadeInLeft wow">
@@ -74,7 +81,6 @@ const BlogDetail = () => {
                 Pack wisely before traveling
               </h1>
             </div>
-           
           </div>
         </div>
       </div>
@@ -83,35 +89,9 @@ const BlogDetail = () => {
         <div className=" w-full md:w-[65%]  ml-[15px] pt-[60px] px-[15px]">
           <div className="  mb-[40px] ">
             <div className=" bg-black   ">
-              <img
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/pexels-photo.jpg"
-                width="1920"
-                height="1280"
-              ></img>
-              {/* <div className="  absolute top-0 left-0 w-full bg-black h-full opacity-25">view</div> */}
+              <img src={iceman} width="1920" height="1280"></img>
             </div>
             <div className="  pt-[50px] pb-[30px]">
-              {/* icon */}
-              {/* <div className=" flex flex-wrap gap-3">
-                  <div className=" flex items-center gap-3">
-                    <CiClock2 />
-                    <p className=" text-[13px] text-[#468ae7]">June 6, 2016</p>
-                  </div>
-                  <div className=" flex items-center gap-3">
-                    <AiOutlineFileText />
-                    <p className=" text-[13px] text-[#468ae7]">John Smith</p>
-                  </div>
-                  <div className=" flex items-center gap-3">
-                    <HiOutlineFolder />
-                    <p className=" text-[13px] text-[#468ae7]">
-                      Blog, Uncategorized
-                    </p>
-                  </div>
-                  <div className=" flex items-center gap-3">
-                    <BiMessageRounded />
-                    <p className=" text-[13px] text-[#468ae7]">5</p>
-                  </div>
-                </div> */}
               <div>
                 <p className=" text-[14px] text-[#8c8c8c]">
                   A wonderful serenity has taken possession of my entire soul,
@@ -151,11 +131,11 @@ const BlogDetail = () => {
 
               <div>
                 <p className=" my-[22px] p-[30px]  bg-[#f5f5f5] overflow-hidden border-l-[2px] italic text-[#777] text-[17px]">
-                 <div className=" animate__fadeInLeft wow ">
-                 I sink under the weight of the splendour of these visions!A
-                  wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which
-                 </div>
+                  <div className=" animate__fadeInLeft wow ">
+                    I sink under the weight of the splendour of these visions!A
+                    wonderful serenity has taken possession of my entire soul,
+                    like these sweet mornings of spring which
+                  </div>
                 </p>
               </div>
               <div>
@@ -189,12 +169,7 @@ const BlogDetail = () => {
                 </p>
               </div>
               <div className=" mt-[30px]">
-                <img
-                  src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-1500x1000.jpg"
-                  width="1920"
-                  height="1280"
-                ></img>
-                {/* <div className="  absolute top-0 left-0 w-full bg-black h-full opacity-25">view</div> */}
+                <img src={japan} width="1920" height="1280"></img>
               </div>
               <div className=" mt-[45px]">
                 <h1 className=" text-[18px] text-[#383838] font-[700] leading-extra-loose   ">
@@ -454,15 +429,7 @@ const BlogDetail = () => {
                 RECENT WORKS
               </h2>
             </div>
-            {/* <div className=" flex flex-wrap gap-3">
-              {image?.map((item, index) => {
-                return (
-                  <div key={index}>
-                    <img src={item?.src} width="103" height="103" />
-                  </div>
-                );
-              })}
-            </div> */}
+      
           </div>
           <div className=" mb-[50px]">
             <div className=" mb-[28px]">

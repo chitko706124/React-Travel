@@ -64,11 +64,7 @@ const TravelArticles = () => {
                     <p className=" text-xs">{item?.date}</p>
                   </div>
                 </div>
-                {/* <img
-                src=
-                className="transition  hover:scale-[1.05] w-[100%] overflow-hidden md:w-[250px]"
-                alt=""
-              /> */}
+              
               </div>
             </div>
           ))}

@@ -218,17 +218,6 @@ const Navbar = ({ modal, setModal }) => {
                       settourhover(false);
                       setclickhover(false);
                     }}
-                    className=" active items-center p-[15px] h-[80px] hover:border-b-2 border-blue-500 text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
-                  >
-                    {" "}
-                    Tour System
-                  </NavLink>
-                  <NavLink
-                    onPointerEnter={(e) => {
-                      e.preventDefault();
-                      settourhover(false);
-                      setclickhover(false);
-                    }}
                     to={`/blog`}
                     className=" active items-center p-[15px] h-[80px] hover:border-b-2 border-blue-500 text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
                   >
@@ -291,13 +280,6 @@ const Navbar = ({ modal, setModal }) => {
                                     <AiOutlineRight className=" text-gray-400" />
                                   </NavLink>
 
-                                  <NavLink
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                                  >
-                                    {" "}
-                                    <p>Tour System</p>
-                                    <AiOutlineRight className=" text-gray-400" />
-                                  </NavLink>
                                   <NavLink
                                     to={"/blog"}
                                     className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}

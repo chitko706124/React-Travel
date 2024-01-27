@@ -31,19 +31,4 @@ const StarRating = ({ rating }) => {
 
 export default StarRating;
 
-//   return (
-//     <div>
-//       <div className=" flex">
-//         {[...Array(totalStars)].map((_, index) => {
-//           const starValue = index + 1;
-//           return (
-//             <FaStar
-//               key={index}
-//               color={starValue <= rating ? "#ffc107" : "#e4e5e9"}
-//             />
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
+

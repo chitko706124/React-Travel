@@ -10,6 +10,24 @@ import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "animate.css";
 
+import Dubai from "../assets/countries/dubai.jpg";
+import Finland from "../assets/countries/finland.jpg";
+
+import boat from "../assets/recent-work/boat.jpg";
+import ice_mountain from "../assets/recent-work/mountain.jpg";
+import green_mountain from "../assets/recent-work/green-mountain.jpg";
+import bridge from "../assets/recent-work/bridge.jpg";
+import finland from "../assets/recent-work/finland.jpg";
+import red_mountain from "../assets/recent-work/red-mountain.jpg";
+import man from "../assets/recent-work/man.jpg";
+import paris from "../assets/recent-work/paris.jpg";
+import lake from "../assets/recent-work/lake.jpg";
+
+import paperMap from "../assets/travel-articles/photo1.jpg";
+import mountain from "../assets/travel-articles/photo2.jpg";
+import tree from "../assets/travel-articles/photo3.jpg";
+import iceman from "../assets/iceman.jpg";
+
 const wowjs = new WOW({
   boxClass: "wow", // default
   animateClass: "animate__animated", // default
@@ -33,31 +51,31 @@ const Blog = () => {
   });
   const image = [
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_220323652-150x150.jpg",
+      src: boat,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1443890923422-7819ed4101c0-150x150.jpg",
+      src: ice_mountain,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/11/italian-landscape-mountains-nature-150x150.jpg",
+      src: green_mountain,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_245507692-150x150.jpg",
+      src: bridge,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_254090041-150x150.jpg",
+      src: finland,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/11/photo-1441155472722-d17942a2b76a-150x150.jpg",
+      src: red_mountain,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/11/photo-1441716844725-09cedc13a4e7-150x150.jpg",
+      src: man,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_136984760-150x150.jpg",
+      src: paris,
     },
     {
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/11/photo-1437651025703-2858c944e3eb-150x150.jpg",
+      src: lake,
     },
   ];
   return (
@@ -87,7 +105,7 @@ const Blog = () => {
             <div className=" bg-black  overflow-hidden ">
               <img
                 className="  hover:transform hover:scale-110  hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/pexels-photo.jpg"
+                src={iceman}
                 width="1920"
                 height="1280"
               ></img>
@@ -145,7 +163,7 @@ const Blog = () => {
             <div className=" bg-black overflow-hidden ">
               <img
                 className=" hover:transform hover:scale-110 hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_195507533.jpg"
+                src={paperMap}
                 width="1920"
                 height="1280"
               ></img>
@@ -198,7 +216,7 @@ const Blog = () => {
             <div className=" bg-black overflow-hidden ">
               <img
                 className=" hover:transform hover:scale-110 hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_151616084.jpg"
+                src={Dubai}
                 alt
                 width="1920"
                 height="1280"
@@ -252,7 +270,7 @@ const Blog = () => {
             <div className=" bg-black overflow-hidden ">
               <img
                 className=" hover:transform hover:scale-110 hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1459255418679-d6424da9ee33.jpg"
+                src={mountain}
                 alt
                 width="1920"
                 height="1280"
@@ -306,7 +324,7 @@ const Blog = () => {
             <div className=" bg-black overflow-hidden ">
               <img
                 className=" hover:transform hover:scale-110 hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_166193831.jpg"
+                src={Finland}
                 alt
                 width="1920"
                 height="1280"
@@ -360,7 +378,7 @@ const Blog = () => {
             <div className=" bg-black overflow-hidden ">
               <img
                 className=" hover:transform hover:scale-110 hover:opacity-60   duration-300"
-                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591.jpg"
+                src={tree}
                 alt
                 width="1920"
                 height="1280"

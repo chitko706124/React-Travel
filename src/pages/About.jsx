@@ -11,6 +11,10 @@ import person4 from "../assets/team-members/person4.jpg";
 import person5 from "../assets/team-members/person5.jpg";
 import person6 from "../assets/team-members/person6.jpg";
 
+import Plane from "../assets/icon/plane.png";
+import Money from "../assets/icon/money.png";
+import Operator from "../assets/icon/operator.png";
+
 import { Parallax } from "react-parallax";
 
 //wow js
@@ -309,13 +313,7 @@ const About = () => {
             <div className=" grid grid-cols-1  py-10">
               {/* md:w-full  */}
               <div className=" flex max-w-[600px]  px-[30px] items-center gap-8 wow animate__fadeInRight">
-                <img
-                  className="w-[50px]"
-                  src={
-                    "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-1.png"
-                  }
-                  alt=""
-                />
+                <img className="w-[50px]" src={Plane} alt="" />
                 <div>
                   <p className=" text-2xl font-semibold">
                     Ornare Quam Justo Tellusv
@@ -327,13 +325,7 @@ const About = () => {
                 </div>
               </div>
               <div className=" flex max-w-[600px]  px-[30px] items-center gap-8 my-10 wow animate__fadeInRight">
-                <img
-                  className="w-[50px]"
-                  src={
-                    "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-2.png"
-                  }
-                  alt=""
-                />
+                <img className="w-[50px]" src={Money} alt="" />
                 <div>
                   <p className=" text-2xl font-semibold">
                     Ornare Quam Justo Tellusv
@@ -345,13 +337,7 @@ const About = () => {
                 </div>
               </div>
               <div className=" flex max-w-[600px]  px-[30px] items-center gap-8 wow animate__fadeInRight">
-                <img
-                  className="w-[50px]"
-                  src={
-                    "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-3.png"
-                  }
-                  alt=""
-                />
+                <img className="w-[50px]" src={Operator} alt="" />
                 <div>
                   <p className=" text-2xl font-semibold">
                     Ornare Quam Justo Tellusv
@@ -386,7 +372,6 @@ const About = () => {
                         src={member?.src}
                         alt=""
                       />
-                      {/* <div className="overlay-about "></div> */}
                     </div>
                     <div className=" pt-[35px] px-[32px] pb-[25px] text-center">
                       <p className=" text-gray-800 text-[16px] font-[600] mb-[8px]">

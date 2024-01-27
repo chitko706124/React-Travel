@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineClockCircle, AiFillStar } from "react-icons/ai";
 import { FaFilm, FaStarHalfAlt } from "react-icons/fa";
-import { Menu, Button, Text } from "@mantine/core";
 
 import Museum from "../assets/museum.jpg";
 import Switzerland from "../assets/countries/switzerland.jpg";
@@ -24,8 +23,7 @@ import "swiper/css/effect-fade";
 import "swiper/css";
 
 import "swiper/css";
-import { Background } from "react-parallax";
-import { HiddenDatesInput } from "@mantine/dates";
+
 const Popular = () => {
   return (
     <div
@@ -34,11 +32,6 @@ const Popular = () => {
         backgroundImage: `url(${Museum})`,
       }}
     >
-      {/* <img
-        src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/search-bg.jpg"
-        alt=""
-        className=" relative w-full h-[1600px] object-cover md:h-[700px] lg:h-[900px]"
-      /> */}
       <div className=" w-full bg-black/50">
         <div className=" md:max-w-[1180px] max-w-[500px]   mx-auto px-[15px] md:py-[30px]">
           <div className="md:max-w-[1180px] max-w-[500px] px-[20px] py-[30px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">

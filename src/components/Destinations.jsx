@@ -118,26 +118,7 @@ const Destinations = () => {
         })}
       </div>
 
-      {/* <div className=" w-full flex">
-        <div className=" w-[20%] bg-black overflow-hidden relative">
-          <div className=" relative">
-            <img
-              src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_124333858-800x960.jpg"
-              alt=""
-              width={800}
-              height={960}
-            />
-          </div>
-          <div className="  ">
-            <div className=" flex">
-              <ImLocation2 />
-              <h1>South America</h1>
-              <p>3 tours</p>
-            </div>
-            <p>View all tours</p>
-          </div>
-        </div>
-      </div> */}
+    
     </>
   );
 };
